@@ -1,0 +1,533 @@
+@import url(https://fonts.googleapis.com/css2?family=Jua&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Jua&display=swap);
+/**
+ * Helper
+ */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* hide scrollbar but allow scrolling */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F03978;
+  /* color of the scroll thumb */
+}
+
+.socket {
+  height: 640px;
+}
+
+img {
+  width: auto;
+  max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Jua", sans-serif;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 80px;
+}
+h2.sty-01 {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+h2.sty-01.mg-b-none {
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 30px;
+  letter-spacing: inherit;
+}
+
+body {
+  font-family: "Jua", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+}
+a:hover, aa:active {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.bg-primary {
+  background-color: #1F191B;
+}
+
+.bg-second {
+  background-color: #261D1F;
+}
+
+.bg-third {
+  background-color: #F03978;
+}
+
+.bg-four {
+  background-color: #f0f0f0;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.btn-sty-01 {
+  background-color: #fff;
+  padding: 10px 40px 8px 40px;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.btn-sty-01.border {
+  border: solid;
+}
+
+.btn-sty-02 {
+  background-color: #F03978;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.cl-info {
+  color: #9a9697;
+}
+
+.f-title {
+  font-family: "Jua", sans-serif;
+}
+
+input.sty-01 {
+  height: 50px;
+  padding: 0 20px;
+}
+
+.ls-xs {
+  letter-spacing: 2px;
+}
+
+.ls-sm {
+  letter-spacing: 5px;
+}
+
+.ls-dm {
+  letter-spacing: 8px;
+}
+
+.mxw-600 {
+  max-width: 600px;
+}
+
+/**
+ * Generale
+ */
+.section-01 {
+  min-height: 1080px;
+}
+
+/**
+ * Section 2
+ */
+.section-02 .block-02,
+.section-02 .block-01 {
+  height: 1000px;
+}
+.section-02 .block-01 {
+  background-color: #f0f0f0;
+}
+.section-02 .block-01-01 {
+  height: 520px;
+}
+.section-02 .block-01-01 div {
+  padding-top: 50%;
+  margin-top: -35%;
+}
+.section-02 .block-01-02 div {
+  height: 320px;
+}
+.section-02 .block-02 {
+  background-color: #F03978;
+  padding: 520px 50px 20px 50px;
+}
+.section-02 .block-02 .carousel-indicators.custom-01 {
+  width: initial;
+  left: 50px;
+  margin-left: 0;
+}
+
+/**
+ * Section 3
+ */
+.section-03 {
+  background-color: #FFF;
+  padding-top: 40px;
+  padding-bottom: 160px;
+}
+.section-03 .block-02 {
+  padding: 130px 200px 0;
+}
+
+/**
+ * Section 4
+ */
+.section-04 {
+  background-color: #f0f0f0;
+  padding-top: 40px;
+  padding-bottom: 160px;
+}
+.section-04 .list [class^=col] {
+  margin-top: 50px;
+  padding: 0 25px;
+}
+.section-04 h5 {
+  margin: 15px 0 20px 0;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  padding: 50px 0 60px;
+}
+.footer a {
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: solid;
+  margin-top: 20px;
+}
+.footer a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * Custom Vendor
+ */
+.carousel-indicators.custom-01 {
+  bottom: 0;
+}
+.carousel-indicators.custom-01 li {
+  width: 40px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 0;
+}
+.carousel-indicators.custom-01 li.active {
+  background-color: #fff;
+  margin: 1px;
+}
+
+.carousel-inner.custom-01 .carousel-caption {
+  position: initial;
+  padding-top: 50%;
+  margin-top: -30%;
+}
+.carousel-inner.custom-02 .carousel-caption {
+  position: initial;
+  text-align: left;
+}
+.carousel-inner.custom-02 .carousel-caption h4 {
+  margin: 200px 0;
+}
+.carousel-inner.custom-03 .carousel-caption {
+  position: initial;
+  text-align: center;
+  min-height: 200px;
+}
+
+.navbar.navbar-default.custom-01 {
+  background-color: inherit;
+  border: inherit;
+}
+.navbar.navbar-default.custom-01 .navbar-brand {
+  padding: 0;
+}
+.navbar.navbar-default.custom-01 .navbar-toggle {
+  margin-top: 18px;
+  margin-right: 36px;
+  margin-bottom: 18px;
+  border: solid 2px #9a9697;
+}
+.navbar.navbar-default.custom-01 .navbar-toggle:active {
+  background: none;
+}
+.navbar.navbar-default.custom-01 .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+.navbar.navbar-default.custom-01 .navbar-nav li {
+  margin-top: 20px;
+}
+.navbar.navbar-default.custom-01 .navbar-nav li a {
+  background-color: inherit;
+  color: #9a9697;
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0 10px;
+  font-size: 18px;
+}
+.navbar.navbar-default.custom-01 .navbar-nav .active a {
+  border-bottom: solid #fff;
+}
+.navbar.navbar-default.custom-01 .navbar-nav.navbar-right {
+  display: block;
+  margin-top: 20px;
+}
+.navbar.navbar-default.custom-01 .navbar-nav.navbar-right img {
+  padding: 0 10px;
+}
+.navbar.navbar-default.custom-01 .navbar-collapse {
+  border: none;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/**
+ * Media responsive
+ * @param  {[type]} max-width: 768px         [description]
+ * @return {[type]}            [description]
+ */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    border-bottom: solid 1px #9a9697;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  h2.sty-01 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 15px;
+    letter-spacing: inherit;
+  }
+
+  body {
+    font-family: "Jua", sans-serif;
+    font-size: 14px;
+  }
+
+  .section-03 .block-03 .number {
+    font-size: 30px;
+  }
+
+  .section-04 .list [class^=col] {
+    padding-right: 50px;
+    text-align: center;
+  }
+
+  .input-group-sty-01 input {
+    max-width: 100%;
+  }
+  .input-group-sty-01 .btn-sty-02 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+/**
+ * CSS Helper Follow Boostrap
+ */
+.bg-c-white {
+  background-color: #fff;
+}
+
+.d-tb {
+  display: table;
+}
+
+.d-tbc {
+  display: table-cell;
+}
+
+.dp-ib {
+  display: inline-block;
+}
+
+.fl-n {
+  float: none;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pd-none {
+  padding: 0;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.tt-upper {
+  text-transform: uppercase;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-init {
+  position: initial;
+}
+
+.mg-t-xs {
+  margin-top: 5px;
+}
+
+.mg-t-sm {
+  margin-top: 10px;
+}
+
+.mg-t-md {
+  margin-top: 15px;
+}
+
+.mg-t-lg {
+  margin-top: 20px;
+}
+
+.mg-t-xlg {
+  margin-top: 25px;
+}
+
+.mg-b-none {
+  margin-bottom: 0;
+}
+
+.mg-b-xs {
+  margin-bottom: 5px;
+}
+
+.mg-b-sm {
+  margin-bottom: 10px;
+}
+
+.mg-b-md {
+  margin-bottom: 15px;
+}
+
+.mg-b-lg {
+  margin-bottom: 20px;
+}
+
+.mg-b-xlg {
+  margin-bottom: 25px;
+}
+
+.mg-l-xs {
+  margin-left: 5px;
+}
+
+.mg-l-sm {
+  margin-left: 10px;
+}
+
+.mg-l-md {
+  margin-left: 15px;
+}
+
+.mg-l-lg {
+  margin-left: 20px;
+}
+
+.mg-l-xlg {
+  margin-left: 25px;
+}
+
+.mg-r-xs {
+  margin-right: 5px;
+}
+
+.mg-r-sm {
+  margin-right: 10px;
+}
+
+.mg-r-md {
+  margin-right: 15px;
+}
+
+.mg-r-lg {
+  margin-right: 20px;
+}
+
+.mg-r-xlg {
+  margin-right: 25px;
+}
+
+.opc-70 {
+  opacity: 0.7;
+}
+
+.of-hidden {
+  overflow: hidden;
+}
+
+.opc-50 {
+  opacity: 0.5;
+}
+
+.opc-30 {
+  opacity: 0.3;
+}

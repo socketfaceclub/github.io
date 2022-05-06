@@ -320,7 +320,7 @@ input.sty-01 {
  * @param  {[type]} max-width: 768px         [description]
  * @return {[type]}            [description]
  */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 768px) {
   .navbar-collapse {
     border-bottom: solid 1px #9a9697;
   }
